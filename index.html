@@ -4,9 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="less.js" type="text/javascript"></script>
+
+    <title>Hamburger</title>
   </head>
   <body>
+    <h1>Hamburger CSS Animations</h1>
+
+    <main>
+      <section>
+        <!-- Want a larger finger touch area thus the wrapper div -->
+        <div class="burger burger1">
+          <div></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="burger burger2">
+          <div></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="burger burger3">
+          <div></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="burger burger4">
+          <div></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="controls">
+      <div class="sliderBox">
+        <input
+          id="range"
+          type="range"
+          name="font-size"
+          min=".3"
+          max="1.5"
+          value="1"
+          step=".1"
+          data-units="rem"
+        />
+        <div>Scale: <span class="range-value"></span> rem</div>
+      </div>
+
+      <div class="customCheckbox">
+        <input type="checkbox" id="customCheckbox" name="customCheckbox" />
+        <label for="customCheckbox"></label>Show Touch Area
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./script.js" type="module"></script>
   </body>
 </html>
